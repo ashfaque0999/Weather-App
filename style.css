@@ -1,0 +1,162 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+    font-family: sans-serif;
+    color: white;
+}
+.Location ,.temperature{
+    display: flex;
+    height: 30vh;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.temperature{
+    flex-direction: column;
+}
+.degree-section{
+    display: flex;
+    align-items: center;
+}s
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
+}
+.degree-section h2{
+    font-size: 40px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Raleway:wght@900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(83, 198, 247),rgb(81, 106, 248));
+
+}
+.wrapper{
+    font-size: 16px;
+    position: absolute;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.container{
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px) ;
+    padding: 3em 1.8em;
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em rgba(3,46,87,0.2);
+    text-align: center;
+
+}
+.shape{
+    position: absolute;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 50%;
+
+}
+.shape-1{
+    
+    height: 13.5em;
+    width: 13.5em;
+   left: 21.25em;
+}
+.shape-2{
+    height: 11em;
+    width: 11em;
+    left: -3em;
+    top: -1em;
+}
+.search-container{
+    font-size: 1em;
+    display: grid;
+    grid-template-columns:9fr 3fr;
+    gap: 2em;
+    border: none;
+}
+.search-container input{
+    padding: 0.7em;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    color: #ffffff;
+    font-weight: 500;
+}
+.search-container input,
+.search-container button{
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+.search-container input::placeholder{
+    color: #ffffff;
+    
+
+}
+.search-container input:focus{
+    /* background-color:; */
+}
+.search-container button{
+    color:rgb(81, 106, 248) ;
+    background-color: #ffffff;
+    border-radius: 0.3em;
+}
+#result h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    margin: 1.25em 0;
+}
+.weather ,.desc{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 2em;
+    
+}
+.weather{
+    margin-top: -0.7em;
+}
+.temp-container{
+
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    
+}
+.temp-container div{
+    padding: 0.7em;
+}
+.temp-container div:first-child{
+    border-right: 1px solid #ffffff3c;
+}
+h1{
+    font-size: 3em;
+    color: #ffffff;
+}
+.temp{
+    font-weight: 300;
+    line-height: 2em;
+}
